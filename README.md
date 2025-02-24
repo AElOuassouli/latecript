@@ -1,6 +1,6 @@
 # Latecript
 
-Latecript is a Python application that transcribes and translates audio from your input devices in real-time using the Speechmatics API. The application provides a Textual-based TUI for an interactive experience. 
+Latecript is a Python application that transcribes and translates audio from your input devices in real-time using the Speechmatics API. The application provides a Textual-based TUI for an interactive experience.
 
 
 ![Latecript Screenshot](assets/screenshot.png)
@@ -27,6 +27,9 @@ You can use BlackHole for audio loopback. It can be installed via brew:
 ```bash
 brew install blackhole-2ch
 ```
+
+While using the app, chose "BlackHole 2ch" as your sound output. In order to still listen to what your mac sound output you can define a multi-output device (with you favourite output device + BlackHole 2ch) in the Audio MIDI setup.  
+
 
 ## Speechmatics API key 
 
