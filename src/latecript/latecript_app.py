@@ -42,14 +42,14 @@ def stream_callback(in_data, frame_count, time_info, status):
 
 
 
-class SpeechmaticsApp(App):
+class LatecriptApp(App):
     BINDINGS = [
             ("t", "show_tab('transcript_tab')", "Transcript"),
             ("s", "show_tab('settings_tab')", "Settings"),
             ("q", "quit", "Quit"),
         ]
     
-    CSS_PATH = "ali_app.tcss"
+    CSS_PATH = "latecript_app.tcss"
         
     input_device = None
     speechmatics_websocket = None

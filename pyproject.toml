@@ -1,7 +1,16 @@
+[project.scripts]
+latecript = "latecript:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+
 [project]
-name = "ali"
+name = "latecript"
 version = "0.1.0"
-description = "Add your description here"
+description = "Latecript: transcript and translate audio from you input audio devices in real-time using Speechmatics API."
 readme = "README.md"
 authors = [
     { name = "Amine El Ouassouli", email = "a.elouassouli@gmail.com" }
@@ -19,10 +28,3 @@ dependencies = [
     "textual>=1.0.0",
     "tqdm>=4.67.1",
 ]
-
-[project.scripts]
-ali = "ali:main"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
