@@ -1,6 +1,8 @@
 # Latecript
 
-Latecript is a Python application that transcribes and translates audio from your input devices in real-time using the Speechmatics API. The application provides a Textual-based TUI for an interactive experience.
+Latecript is a Python application that transcribes and translates audio from your input devices in real-time using the Speechmatics API. The application provides a Textual-based TUI for an interactive experience. 
+
+(Developped quick and dirty with the help of Copilot)
 
 ## Features
 
@@ -12,10 +14,7 @@ Latecript is a Python application that transcribes and translates audio from you
 ## Requirements
 
 - Python 3.12 or above
-- [Uv](https://github.com/uv-org/uv) (for dependency management)
-- [Speechmatics Python SDK](https://github.com/speechmatics/speechmatics-python)
-- [Textual](https://github.com/Textualize/textual)
-
+- [UV](https://github.com/uv-org/uv) (for dependency management)
 
 ## Getting your audio output as a usable input. 
 
@@ -61,7 +60,9 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Contributing
 
-Contributions are welcome! Please open issues and submit pull requests for improvements and bug fixes.
+Contributions are welcome! Please open issues and submit pull requests for improvements and bug fixes. 
+
+This app is not meant to be maintained and was developped in a quick and dirty way. 
 
 ## Acknowledgements
 
@@ -69,4 +70,3 @@ Contributions are welcome! Please open issues and submit pull requests for impro
 - [Textual](https://github.com/Textualize/textual) for the TUI framework.
 - [BlackHole](https://existential.audio/blackhole/) for audio loopback driver for mac. 
 
-(Developped quick and dirty with the help of Copilot)
