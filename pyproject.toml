@@ -1,0 +1,28 @@
+[project]
+name = "ali"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Amine El Ouassouli", email = "a.elouassouli@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "asyncio>=3.4.3",
+    "certifi>=2025.1.31",
+    "pip-system-certs>=4.0",
+    "pyaudio>=0.2.14",
+    "pydantic>=2.10.6",
+    "sounddevice>=0.5.1",
+    "soundfile>=0.13.1",
+    "speechmatics-python>=3.0.2",
+    "textual>=1.0.0",
+    "tqdm>=4.67.1",
+]
+
+[project.scripts]
+ali = "ali:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
