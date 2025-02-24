@@ -160,7 +160,5 @@ cython_debug/
 #.idea/
 
 # Config file 
-./settings.json
-./config.json
-
+.settings.json
 certificate.pem
