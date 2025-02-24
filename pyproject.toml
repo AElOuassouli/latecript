@@ -22,9 +22,15 @@ dependencies = [
     "pip-system-certs>=4.0",
     "pyaudio>=0.2.14",
     "pydantic>=2.10.6",
+    
     "sounddevice>=0.5.1",
     "soundfile>=0.13.1",
     "speechmatics-python>=3.0.2",
     "textual>=1.0.0",
     "tqdm>=4.67.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.9.7",
 ]
