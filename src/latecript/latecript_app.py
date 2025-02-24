@@ -150,7 +150,6 @@ class LatecriptApp(App):
                     "defaultSampleRate"
                 ]
             )
-            import json
 
             self.stream = pyaudio_handler.get_stream(
                 input_device_index=input_device,
