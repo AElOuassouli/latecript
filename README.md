@@ -2,6 +2,9 @@
 
 Latecript is a Python application that transcribes and translates audio from your input devices in real-time using the Speechmatics API. The application provides a Textual-based TUI for an interactive experience. 
 
+
+![Latecript Screenshot](assets/screenshot.png)
+
 (Developped quick and dirty with the help of Copilot)
 
 ## Features
