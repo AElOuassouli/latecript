@@ -30,38 +30,13 @@ brew install blackhole-2ch
 
 You can generate your speechmatics API key from your user account in speechmatics. 
 
-## Installation
-
-2. Install the dependencies using uv:
-
-   ```bash
-   uv install
-   ```
-
-   To install development dependencies, run:
-
-   ```bash
-   uv install -e dev
-   ```
-
-3. To run Latecript, execute:
-
-   ```bash
-   uv run latecript --settings_file [path to your settings file]
-   ```
-
 ## Usage
 
-Create a `.settings.json` with the following structure:
+To run Latecript, execute:
 
-```json
-{
-  "speechmatics_api_key": "Your Speechmatics API Key",
-  "output_device": "Blackhole 2ch",
-  "transcription_language": "fr-FR",
-  "translation_language": "en-US"
-}
-```
+   ```bash
+   uv run latecript 
+   ```
 
 You can provide an alternative settings file via the command line:
 
@@ -69,18 +44,16 @@ You can provide an alternative settings file via the command line:
 uv run latecript --settings_file /path/to/your/settings.json
 ```
 
-If no settings file is providedn, you will land on the settings tab. 
+ The settings file is a json file with the following structure:
 
-## Usage
-
-To run Latecript, simply execute:
-
-```bash
-python -m latecript
+```json
+{
+  "speechmatics_api_key": "Your Speechmatics API Key",
+  "output_device": "Blackhole 2ch",
+  "transcription_language": "fr",
+  "translation_language": "en"
+}
 ```
-
-This will launch the TUI application where you can select audio devices and manage transcription/translation settings.
-
 
 ## License
 
