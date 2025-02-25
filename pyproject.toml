@@ -2,7 +2,7 @@
 latecript = "latecript:main"
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27.0"]
 build-backend = "hatchling.build"
 
 
@@ -13,7 +13,7 @@ version = "0.1.0"
 description = "Latecript: transcript and translate audio from you input audio devices in real-time using Speechmatics API."
 readme = "README.md"
 authors = [
-    { name = "Amine El Ouassouli", email = "a.elouassouli@gmail.com" }
+    { name = "aelouass" }
 ]
 requires-python = ">=3.12"
 dependencies = [
@@ -34,3 +34,4 @@ dependencies = [
 dev = [
     "ruff>=0.9.7",
 ]
+

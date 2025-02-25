@@ -9,3 +9,9 @@ lint-fix:
 
 run: 
 	uv run latecript --settings_file .settings.json
+
+build:
+	uv build
+
+publish: build
+	uv publish --token $(LATECRIPT_PYPI_TOKEN)
