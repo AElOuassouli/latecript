@@ -1,11 +1,14 @@
 name: Release
 
 on:
-  push:
+  # This trigger the workflow when a pull request is merged into main AND pyproject.toml was updated.
+  pull_request:
     branches:
       - main
     paths:
       - "pyproject.toml"
+    types:
+      - closed
   # This trigger the workflow on tag creation
   create:
     tags:
@@ -21,7 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-
+    # Only run if the pull request was merged.
+    if: github.event.pull_request.merged == true
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@63c24ba6bd7ba022e956957a5b867baf7b598726
@@ -59,7 +63,7 @@ jobs:
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
-        if: github.event_name == 'push'
+        if: github.event_name == 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
