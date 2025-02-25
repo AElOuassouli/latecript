@@ -28,7 +28,7 @@ jobs:
     if: github.event.pull_request.merged == true
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e956957a5b867baf7b598726
+        uses: step-security/harden-runner@v2 # Changed to a released tag instead of a commit SHA
         with:
           egress-policy: audit
 
