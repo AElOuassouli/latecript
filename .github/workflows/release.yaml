@@ -7,7 +7,6 @@ on:
 
 permissions:
   id-token: write
-  contents: write # Required to create releases
 
 jobs:
   release:
@@ -49,15 +48,3 @@ jobs:
         with:
           packages-dir: dist/
 
-      - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.get_version.outputs.VERSION }}
-          release_name: Release ${{ steps.get_version.outputs.VERSION }}
-          body: |
-            Release of version ${{ steps.get_version.outputs.VERSION }}
-          draft: false
-          prerelease: false
