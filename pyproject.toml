@@ -9,8 +9,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "latecript"
-version = "0.1.2"
-description = "Latecript: transcript and translate audio from you input audio devices in real-time using Speechmatics API."
+version = "0.1.5"
+description = "Latecript: transcript and translate audio from you input audio devices in real-time using Speechmatics API in a terminal."
 readme = "README.md"
 authors = [
     { name = "aelouass" }
